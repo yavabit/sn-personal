@@ -1,0 +1,10 @@
+header {
+    position: sticky;
+    display: flex;
+    .left-panel {
+        width: 50%;
+    }
+    .right-panel {
+        margin-left: auto;
+    }
+}

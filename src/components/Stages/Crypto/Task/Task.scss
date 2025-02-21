@@ -1,0 +1,13 @@
+.btn-task {
+	.pending {
+		background-color: #1565c0;
+		color: white;
+	}
+	.claimed {
+		color: white;
+		background-color: hsla(220, 20%, 35%, 0.836);
+	}
+	.complete {
+		background-color: green;
+	}
+}

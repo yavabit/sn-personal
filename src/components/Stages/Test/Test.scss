@@ -1,0 +1,19 @@
+.stepper-cust {
+	span {
+		color: white;
+		span {
+			color: white !important;
+		}
+	}
+}
+.results-container {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+.img-result-block {
+	img {
+		width: 100%;
+	}
+}

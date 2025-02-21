@@ -1,0 +1,80 @@
+.about-block {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	.left-panel {
+		width: 45%;
+		height: auto;
+		border: 1px solid rgba(255, 255, 255, 0.349);
+		border-radius: 10px;
+		padding: 20px;
+
+		img {
+			border-radius: 10px;
+			max-height: 540px;
+			object-fit: cover;
+		}
+	}
+	.right-panel {
+		width: 50%;
+		.tabs {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.tab-button {
+				padding: 15px 20px;
+				cursor: pointer;
+				background-color: transparent;
+				border-radius: 10px;
+				height: 150px;
+				color: hsl(223, 15%, 82%);
+				transition: .3s;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				line-height: 22px;			
+
+				.tab-icon {
+					width: 50px;
+					height: 50px;
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center;
+					&.crypto {
+						background-image: url(../../../assets/images/about/crypto.svg);
+					}
+					&.rapper {
+						background-image: url(../../../assets/images/about/audio.svg);
+					}
+					&.factory {
+						background-image: url(../../../assets/images/about/factory.svg);
+						color: hsl(223, 15%, 82%);
+					}
+				}
+
+				&.selected {
+					color: white;
+					background-color: hsla(220, 20%, 35%, 0.452);
+					.tab-icon.crypto {
+						background-image: url(../../../assets/images/about/crypto-on.svg);
+					}
+					.tab-icon.rapper {
+						background-image: url(../../../assets/images/about/audio-on.svg);
+					}
+					.tab-icon.factory {
+						background-image: url(../../../assets/images/about/factory-on.svg);
+					}
+				}
+
+				&:hover {
+					background-color: hsl(220, 20%, 35%, 0.2);
+				}
+
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}

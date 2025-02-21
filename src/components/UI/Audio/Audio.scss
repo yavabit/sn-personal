@@ -1,0 +1,31 @@
+.audio-items {
+	margin-bottom: 20px;
+	.audio-item {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		padding: 20px 10px;
+		border: 1px solid rgba(255, 255, 255, 0.349);
+		background-color: hsla(220, 20%, 35%, 0.836);
+		border-radius: 10px;
+		margin-bottom: 20px;
+		.track-info {		
+			display: flex;	
+			.track-control__button {
+				margin-right: 10px;
+			}
+			.track-info__descr {
+
+			}
+		}
+		.track-control {
+			margin-left: 10px;
+			width: 50%;
+			display: flex;
+		}
+		.track-volume {
+			margin-left: auto;
+			width: 25%;
+		}
+	}
+}
